@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra sô lẻ</title>
+</head>
+<body>
+<h3>Kiểm tra số lẻ:</h3>
+Nhập số: <input id="name">
+</br></br>
+<button onclick="check()">Check</button>
+<p id="display"></p>
+</body>
+</html>
+<script>
+
+    function check() {
+        let a = document.getElementById("name").value
+        if (a % 2 != 0){
+            document.write("a là số lẻ");
+        }
+        else{
+            document.write("a không là số lẻ");
+        }
+        document.getElementById("display").innerText = a;
+    }
+</script>
